@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | SmartSpend AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard-page">
+
+        <nav class="dashboard-nav">
+            <h2>SmartSpend AI</h2>
+            <a href="/logout">Logout</a>
+        </nav>
+
+        <section class="dashboard-header">
+            <h1>Welcome, {{ name }}</h1>
+            <p>Your spending safety overview</p>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="dash-card">
+                <h3>Monthly Income</h3>
+                <h2>₹25,000</h2>
+            </div>
+
+            <div class="dash-card">
+                <h3>Total Expenses</h3>
+                <h2>₹14,500</h2>
+            </div>
+
+            <div class="dash-card">
+                <h3>BNPL Due</h3>
+                <h2>₹6,200</h2>
+            </div>
+
+            <div class="dash-card warning">
+                <h3>Risk Score</h3>
+                <h2>Medium</h2>
+            </div>
+        </section>
+
+        <section class="dashboard-actions">
+            <a href="#" class="dash-btn">New Purchase</a>
+            <a href="#" class="dash-btn">View History</a>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

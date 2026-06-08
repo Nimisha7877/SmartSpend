@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | SmartSpend AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="auth-page">
+        <div class="auth-card signup-card">
+            <h1>Sign Up</h1>
+            <p>Create your SmartSpend AI account</p>
+
+            <form action="/signup" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+
+                <div class="verify-group">
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <button type="button" class="verify-btn">Verify Email</button>
+                </div>
+                <span class="verify-status">Email not verified</span>
+
+                <div class="verify-group">
+                    <input type="tel" name="contact" placeholder="Enter Contact Number" required>
+                    <button type="button" class="verify-btn">Send OTP</button>
+                </div>
+
+                <input type="text" name="otp" placeholder="Enter Contact OTP">
+
+                <span class="verify-status">Contact not verified</span>
+
+                <input type="password" name="password" placeholder="Create Password" required>
+
+                <select name="user_type" required>
+                    <option value="">Select User Type</option>
+                    <option value="student">Student</option>
+                    <option value="salaried">Salaried</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <p class="switch-link">
+                Already have an account?
+                <a href="/login">Login</a>
+            </p>
+
+            <a class="back-link" href="/">← Back to Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
