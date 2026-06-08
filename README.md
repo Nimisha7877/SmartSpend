@@ -1,4 +1,4 @@
-# 💳 SmartSpend AI
+# 💳 SmartSpend 
 
 ### AI-Powered BNPL Platform for Overspending Prevention & Debt Risk Analysis
 
